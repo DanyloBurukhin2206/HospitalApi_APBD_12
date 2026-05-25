@@ -1,0 +1,20 @@
+@HospitalApi_HostAddress = http://localhost:5078
+
+### GET all patients
+GET {{HospitalApi_HostAddress}}/api/patients
+Accept: application/json
+
+### GET patients with search
+GET {{HospitalApi_HostAddress}}/api/patients?search=an
+Accept: application/json
+
+### POST create bed assignment
+POST {{HospitalApi_HostAddress}}/api/patients/90010112345/bedassignments
+Content-Type: application/json
+
+{
+  "from": "2026-05-20T14:00:00",
+  "to": "2026-05-30T10:00:00",
+  "bedType": "Standard",
+  "ward": "Kardiologia"
+}

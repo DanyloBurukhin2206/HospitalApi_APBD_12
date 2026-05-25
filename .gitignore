@@ -1,0 +1,16 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+.idea/
+
+# Rider / VS Code
+*.DotSettings.user
+.vscode/
+
+# Logs
+*.log
